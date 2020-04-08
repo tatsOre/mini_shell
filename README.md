@@ -1,23 +1,21 @@
 # Mini Shell
-##  Some things I need to know to start coding my own Ultra Simple Shell
+##  Some things I need to know to start coding my own Ultra Simple Shell #Cisfun
 
-* #Cisfun
-
-## Resources
+#### Resources
 
 * [Everything you need to know to start coding your own shell](Sample Text URL)
 
-## Files
+#### Files
 | File  | Description |
 | :---: | :---:  |
 | `Later` | Later |
 
-## Compilation
+#### Compilation
 Code files must be compiled this way:
 ```bash
 $ gcc -Wall -Werror -Wextra -pedantic *.c -o hsh
 ```
-## Authors
+#### Authors
 * Tatiana Orejuela Zapata | [Github](https://github.com/tatsOre)
 
 ##### Foundations - Low-level programming & Algorithm  Linux and Unix system programming.
