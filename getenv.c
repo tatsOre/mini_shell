@@ -1,11 +1,10 @@
 #include "simple_shell.h"
 
 /**
- * _getenv - Obtains the string value of a specified environment variable
- * @name: environment variable to obtain
- * Return: pointer to string value
+ * _getenv - Search in environment variable to find a specific variable name
+ * @name: environment variable
+ * Return: pointer to the corresponding value string
  */
-
 char *_getenv(char *name)
 {
 	int index = 0;
@@ -13,9 +12,9 @@ char *_getenv(char *name)
 	while (environ[index])
 	{
 		if (_strncmp(environ[index], name, _strlen(name)) == 0)
-			break;
+			return (environ[index] + (_strlen(name) + 1));
+
 		++index;
 	}
-
-	return (environ[index]);
+	return (NULL);
 }

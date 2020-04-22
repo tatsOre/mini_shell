@@ -17,13 +17,12 @@ char *_getfilepath(char *cmd)
 	else
 	{
 		path = _getenv("PATH");
-		printf("Entro al else y path es = %s\n", path);
+
 		path_directories = path_list(path);
-		printf("antes del loop \n");
+
 		while (path_directories != NULL)
 		{
 			filepathname = _path_concat(path_directories->dir, cmd);
-			printf("%s\n", filepathname);
 
 			if (stat(filepathname, &st) == 0)
 			{
